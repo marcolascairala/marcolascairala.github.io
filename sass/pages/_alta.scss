@@ -1,11 +1,13 @@
 .section-form {
     background-color: #010400;
     padding: 1em;
+    overflow-x: hidden;
 
     &__header {
         color: #EC058E;
         margin: 5px;
     }
+
 }
 
 

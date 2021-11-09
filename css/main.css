@@ -328,6 +328,7 @@ main {
 .section-form {
   background-color: #010400;
   padding: 1em;
+  overflow-x: hidden;
 }
 .section-form__header {
   color: #EC058E;
