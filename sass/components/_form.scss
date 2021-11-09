@@ -1,0 +1,17 @@
+.form {
+    text-align: center;
+    color: #EC058E ;
+    font-size: 20px;
+
+    &__register {
+        margin: .5em 4em;
+        background-color: #30332E;
+        padding: 50px;
+        border-radius: 20px;
+    } 
+
+    &__row {
+        line-height: 30px;
+    }
+
+}

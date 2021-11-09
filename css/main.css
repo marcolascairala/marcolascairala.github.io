@@ -138,6 +138,21 @@ body {
   }
 }
 
+.form {
+  text-align: center;
+  color: #EC058E;
+  font-size: 20px;
+}
+.form__register {
+  margin: 0.5em 4em;
+  background-color: #30332E;
+  padding: 50px;
+  border-radius: 20px;
+}
+.form__row {
+  line-height: 30px;
+}
+
 /***********************************
             HEADER
 ***********************************/
@@ -310,7 +325,16 @@ main {
   }
 }
 
-.container__form {
-  background-color: #30332e;
-  text-align: center;
+.section-form {
+  background-color: #010400;
+  padding: 1em;
+}
+.section-form__header {
+  color: #EC058E;
+  margin: 5px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */

@@ -1,4 +1,16 @@
-.container__form {
-    background-color: #30332e;
-    text-align: center;
+.section-form {
+    background-color: #010400;
+    padding: 1em;
+
+    &__header {
+        color: #EC058E;
+        margin: 5px;
+    }
+}
+
+
+.form-container {
+    display: flex;
+    justify-content: center;
+
 }
