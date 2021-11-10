@@ -338,4 +338,34 @@ main {
 .form-container {
   display: flex;
   justify-content: center;
+}
+
+.section-contact {
+  background-color: #010400;
+  padding: 1em;
+  overflow-x: hidden;
+}
+.section-contact__header {
+  color: #EC058E;
+  margin: 5px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #EC058E;
+  font-size: 20px;
+  width: 100%;
+}
+.contact__body {
+  background-color: #30332E;
+  border-radius: 20px;
+  width: 100%;
+}
+.contact__info {
+  width: 50px;
+}
+.contact__flex {
+  display: flex;
 }/*# sourceMappingURL=main.css.map */

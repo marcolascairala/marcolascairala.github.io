@@ -1,0 +1,46 @@
+.section-contact {
+    background-color: #010400;
+    padding: 1em;
+    overflow-x: hidden;
+
+    &__header {
+        color: #EC058E;
+        margin: 5px;
+    }
+
+}
+
+// .contact-container {
+//     display: flex;
+//     justify-content: center;
+// }
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #EC058E ;
+    font-size: 20px;
+    width: 100%;
+
+
+    &__body {
+        // display: flex;
+        // flex-direction: column;
+        // margin: .5em 4em;
+        background-color: #30332E;
+        // padding: 50px;
+        border-radius: 20px;
+        width: 100%;
+        
+    } 
+
+    &__info {
+        width: 50px;
+    }
+
+    &__flex {
+        display: flex;
+    }
+
+}
