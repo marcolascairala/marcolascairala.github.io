@@ -32,15 +32,27 @@
         // padding: 50px;
         border-radius: 20px;
         width: 100%;
-        
+        line-height: 100px;
     } 
 
     &__info {
         width: 50px;
+        line-height: 50px;
+        margin-top: 20px;
     }
+
+
 
     &__flex {
         display: flex;
     }
 
+    &__flex > p {
+        margin-left: 10px;
+        bottom: 0;
+    }
+
+    &__flex > img {
+        margin: 10px 0px 10px 15px
+    }
 }
