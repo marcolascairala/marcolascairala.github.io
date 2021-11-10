@@ -3,6 +3,7 @@
     padding: 1em;
     overflow-x: hidden;
 
+
     &__header {
         color: #EC058E;
         margin: 5px;
@@ -10,33 +11,27 @@
 
 }
 
-// .contact-container {
-//     display: flex;
-//     justify-content: center;
-// }
+.contact-container {
+    display: flex;
+    justify-content: center;
+}
 
 .contact {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    display: block;
     color: #EC058E ;
     font-size: 20px;
-    width: 100%;
-
-
+    border-radius: 10px;
+    
     &__body {
-        // display: flex;
-        // flex-direction: column;
-        // margin: .5em 4em;
-        background-color: #30332E;
-        // padding: 50px;
+        display: flex;
+        flex-wrap: wrap;
         border-radius: 20px;
-        width: 100%;
-        line-height: 100px;
+        background-color: #30332E;
+        margin: .5em 4em;
     } 
 
     &__info {
-        width: 50px;
+
         line-height: 50px;
         margin-top: 20px;
     }
@@ -49,10 +44,19 @@
 
     &__flex > p {
         margin-left: 10px;
-        bottom: 0;
     }
 
     &__flex > img {
         margin: 10px 0px 10px 15px
     }
+
+    &__mail {
+        padding: 30px;
+        align-self: center;
+        text-align: center;
+    }
 }
+
+
+
+

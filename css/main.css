@@ -349,22 +349,25 @@ main {
   margin: 5px;
 }
 
-.contact {
+.contact-container {
   display: flex;
-  flex-direction: column;
-  text-align: center;
+  justify-content: center;
+}
+
+.contact {
+  display: block;
   color: #EC058E;
   font-size: 20px;
-  width: 100%;
+  border-radius: 10px;
 }
 .contact__body {
-  background-color: #30332E;
+  display: flex;
+  flex-wrap: wrap;
   border-radius: 20px;
-  width: 100%;
-  line-height: 100px;
+  background-color: #30332E;
+  margin: 0.5em 4em;
 }
 .contact__info {
-  width: 50px;
   line-height: 50px;
   margin-top: 20px;
 }
@@ -373,8 +376,12 @@ main {
 }
 .contact__flex > p {
   margin-left: 10px;
-  bottom: 0;
 }
 .contact__flex > img {
   margin: 10px 0px 10px 15px;
+}
+.contact__mail {
+  padding: 30px;
+  align-self: center;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
