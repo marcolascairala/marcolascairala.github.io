@@ -300,6 +300,19 @@ main {
   border: 0;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-around;
+  bottom: 0;
+}
+.footer__icons {
+  display: flex;
+  position: relative;
+  top: 20px;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
 .section-cards {
   background-color: #010400;
   padding: 1em;
@@ -322,6 +335,16 @@ main {
   .cards-container {
     gap: 2em;
   }
+}
+
+.section-footer {
+  padding: 1em;
+  background-color: #30332E;
+}
+
+.section-footer-legal {
+  text-align: center;
+  color: whitesmoke;
 }
 
 .section-form {
