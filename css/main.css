@@ -12,6 +12,11 @@ body {
   background-color: #010400;
 }
 
+a {
+  text-decoration: none;
+  color: #62BBC1;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -68,9 +73,12 @@ body {
   bottom: 17px;
   right: 5px;
   display: flex;
-  background-color: #A8F840;
+  background-color: #8AC73C;
   width: 70px;
   border-radius: 5px;
+}
+.card__price > a {
+  color: whitesmoke;
 }
 .card__price-flex {
   display: flex;
@@ -139,7 +147,7 @@ body {
 
 .form {
   text-align: center;
-  color: #EC058E;
+  color: #62BBC1;
   font-size: 20px;
 }
 .form__register {
@@ -199,7 +207,7 @@ body {
 .nav-bar__nav-link {
   display: block;
   background-color: #30332E;
-  color: #EC058E;
+  color: #62BBC1;
   padding: 1em 2em;
   text-decoration: none;
 }
@@ -318,7 +326,7 @@ main {
   padding: 1em;
 }
 .section-cards__header {
-  color: #EC058E;
+  color: #62BBC1;
   margin: 5px;
 }
 
@@ -338,8 +346,10 @@ main {
 }
 
 .section-footer {
+  margin-top: 30px;
   padding: 1em;
   background-color: #30332E;
+  color: #62BBC1;
 }
 
 .section-footer-legal {
@@ -353,7 +363,7 @@ main {
   overflow-x: hidden;
 }
 .section-form__header {
-  color: #EC058E;
+  color: #62BBC1;
   margin: 5px;
 }
 
@@ -368,7 +378,7 @@ main {
   overflow-x: hidden;
 }
 .section-contact__header {
-  color: #EC058E;
+  color: #62BBC1;
   margin: 5px;
 }
 
@@ -379,7 +389,7 @@ main {
 
 .contact {
   display: block;
-  color: #EC058E;
+  color: #62BBC1;
   font-size: 20px;
   border-radius: 10px;
 }

@@ -97,9 +97,13 @@
         bottom: 17px;
         right: 5px;
         display: flex;
-        background-color: #A8F840;
+        background-color: #8AC73C;
         width: 70px;
         border-radius: 5px;
+    }
+
+    &__price > a {
+        color: whitesmoke;
     }
 
     &__price-flex {
