@@ -308,6 +308,19 @@ main {
   border: 0;
 }
 
+.section-footer {
+  display: block;
+  margin-top: 30px;
+  padding: 1em;
+  background-color: #30332E;
+  color: #62BBC1;
+}
+
+.section-footer-legal {
+  text-align: center;
+  color: whitesmoke;
+}
+
 .footer {
   display: flex;
   justify-content: space-around;
@@ -417,4 +430,50 @@ main {
   padding: 30px;
   align-self: center;
   text-align: center;
+}
+
+.section-us {
+  padding: 1em;
+  overflow-x: hidden;
+}
+.section-us__header {
+  color: #62BBC1;
+  margin: 5px;
+}
+
+.us-container {
+  display: flex;
+  justify-content: center;
+}
+
+.us {
+  display: block;
+  color: #62BBC1;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: #30332E;
+  padding: 10px;
+}
+.us__body {
+  border-radius: 20px;
+  background-color: #30332E;
+  margin: 0.5em 4em;
+}
+.us__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+.us__cards-card {
+  outline: none;
+  border: #374441 1px solid;
+  width: 200px;
+  text-align: center;
+  font-size: 16px;
+  padding: 20px;
+}
+.us__body ~ p {
+  margin-left: 20px;
+  font-size: 30px;
 }/*# sourceMappingURL=main.css.map */

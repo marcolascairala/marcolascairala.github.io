@@ -1,3 +1,16 @@
+.section-footer {
+    display: block;
+    margin-top: 30px;
+    padding: 1em;
+    background-color: #30332E;
+    color: #62BBC1;
+}
+
+.section-footer-legal {
+    text-align: center;
+    color: whitesmoke;
+}
+
 .footer {
     display: flex;
     justify-content: space-around;
