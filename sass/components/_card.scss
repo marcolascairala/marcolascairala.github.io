@@ -163,7 +163,7 @@
     
         & &__image-container,
         & &__image-container {
-            width: 100%;
+            width: 110%;
             height: 100%;
             // clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
         }
@@ -175,7 +175,7 @@
         // }
 
         &__content {
-            padding: 1em;
+            padding: .5em;
             display: block;
             color: #62BBC1;
         }
