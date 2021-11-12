@@ -464,10 +464,15 @@ main {
   padding: 10px;
 }
 .us__body {
+  display: flex;
   border-radius: 20px;
   background-color: #30332E;
   margin: 0.5em 4em;
   line-height: 40px;
+}
+.us__text {
+  padding: 1em;
+  line-height: 3em;
 }
 .us__cards {
   display: flex;
@@ -503,4 +508,10 @@ main {
 }
 .us__cards-card:hover .us__cards-card__dark {
   display: block;
+}
+.us__title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 40px;
+  text-decoration: underline;
 }/*# sourceMappingURL=main.css.map */
