@@ -224,7 +224,7 @@ body {
             SEARCH BAR
 ***********************************/
 .search-bar {
-  background-color: #30332E;
+  background-color: #141513;
   display: flex;
 }
 .search-bar__logo-container, .search-bar__form-container {
@@ -238,20 +238,26 @@ body {
   flex-basis: 100%;
   display: flex;
   justify-content: center;
+  align-self: center;
 }
 .search-bar__form-label {
   background-color: #141513;
 }
 .search-bar__form-search {
   background-color: #fff;
-  width: 70%;
+  width: 50%;
+  height: 30px;
 }
 .search-bar__form-submit {
-  background-color: darkslategray;
+  background-color: #141513;
+  width: 30px;
+  height: 30px;
+  border: none;
 }
 .search-bar__carrito-container {
   flex: 0 0 3em;
   background-color: #141513;
+  align-self: center;
 }
 .search-bar__carrito-container__icon {
   position: relative;
@@ -458,6 +464,7 @@ main {
   border-radius: 20px;
   background-color: #30332E;
   margin: 0.5em 4em;
+  line-height: 40px;
 }
 .us__cards {
   display: flex;
@@ -468,12 +475,29 @@ main {
 .us__cards-card {
   outline: none;
   border: #374441 1px solid;
+  border-radius: 10px;
   width: 200px;
   text-align: center;
   font-size: 16px;
   padding: 20px;
 }
+.us__cards-card__light {
+  display: block;
+}
+.us__cards-card__dark {
+  display: none;
+}
 .us__body ~ p {
   margin-left: 20px;
   font-size: 30px;
+}
+.us__cards-card:hover {
+  background-color: #fff;
+  color: black;
+}
+.us__cards-card:hover .us__cards-card__light {
+  display: none;
+}
+.us__cards-card:hover .us__cards-card__dark {
+  display: block;
 }/*# sourceMappingURL=main.css.map */

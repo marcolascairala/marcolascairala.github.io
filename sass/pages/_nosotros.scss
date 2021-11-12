@@ -25,6 +25,7 @@
         border-radius: 20px;
         background-color: #30332E;
         margin: .5em 4em;
+        line-height: 40px;
     }
 
     &__cards {
@@ -37,15 +38,39 @@
     &__cards-card {
         outline: none;
         border: #374441 1px solid;
+        border-radius: 10px;
         width: 200px; 
         text-align: center;
         font-size: 16px;
         padding: 20px;
+
+    }
+    &__cards-card__light {
+        display: block;
+    }
+    
+    &__cards-card__dark {
+        display: none;
     }
 
     &__body ~ p {
         margin-left: 20px;
         font-size: 30px;
     }
+
+    &__cards-card:hover {
+        background-color: #fff;
+        color: black;
+
+    }
+
+    &__cards-card:hover &__cards-card__light {
+        display: none;
+    }
+    
+    &__cards-card:hover &__cards-card__dark {
+        display: block;
+    }
 }
+
 
