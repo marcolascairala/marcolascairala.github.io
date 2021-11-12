@@ -129,19 +129,22 @@ body {
     display: flex;
   }
   .card .card__image-container, .card .card__image-container {
-    width: 40%;
-    -webkit-clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
-            clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
-  }
-  .card:hover .card__image-container, .card:focus .card__image-container {
-    width: 40%;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    width: 100%;
+    height: 100%;
   }
   .card__content {
     padding: 1em;
     display: block;
-    color: black;
+    color: #62BBC1;
+  }
+  .card__image-description-normal {
+    display: none;
+  }
+  .card__image-container:hover .card__image-description-overlay {
+    display: none;
+  }
+  .card__image-container:hover .card__image-description-normal {
+    display: none;
   }
 }
 
