@@ -28,7 +28,6 @@ body {
   max-width: 300px;
   height: 300px;
   overflow: hidden;
-  /* color: #fcfdfe; */
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 0 3px rgba(0, 0, 0, 0.4);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -36,8 +35,6 @@ body {
 .card__image-container {
   height: 300px;
   position: relative;
-  /* background-color: blue; */
-  /* overflow: hidden; */
 }
 .card__image {
   width: 100%;
@@ -76,6 +73,7 @@ body {
   background-color: #8AC73C;
   width: 70px;
   border-radius: 5px;
+  cursor: pointer;
 }
 .card__price > a {
   color: whitesmoke;
@@ -148,19 +146,14 @@ body {
   }
 }
 
-.form {
+.alta-container {
   text-align: center;
   color: #62BBC1;
   font-size: 20px;
 }
-.form__register {
-  margin: 0.5em 4em;
-  background-color: #30332E;
-  padding: 50px;
-  border-radius: 20px;
-}
-.form__row {
-  line-height: 30px;
+
+.active {
+  font-weight: bold;
 }
 
 /***********************************
@@ -266,6 +259,7 @@ body {
   position: relative;
   top: 10px;
   right: -7px;
+  cursor: pointer;
 }
 @media (min-width: 426px) and (max-width: 768px) {
   .search-bar {
@@ -314,6 +308,7 @@ body {
 }
 
 main {
+  width: 100%;
   border: 0;
 }
 
@@ -379,19 +374,93 @@ main {
   color: whitesmoke;
 }
 
-.section-form {
-  background-color: #010400;
+.section-alta {
   padding: 1em;
-  overflow-x: hidden;
+  background-color: #30332E;
+  border-radius: 20px;
 }
-.section-form__header {
+.section-alta h1 {
   color: #62BBC1;
-  margin: 5px;
 }
-
-.form-container {
-  display: flex;
-  justify-content: center;
+.section-alta .input-group {
+  margin: 0.5em 0 1.5em;
+}
+.section-alta .input-group input:not(input[type=checkbox]) {
+  padding: 0.5em 1em;
+  display: block;
+  width: 100%;
+  margin-top: 0.5em;
+  border: none;
+  border-bottom: 1px solid #333;
+  outline: none;
+  border-top-left-radius: 0.2em;
+  border-top-right-radius: 0.2em;
+}
+.section-alta .input-group input:not(input[type=checkbox]):focus {
+  border-left: 0.5em solid #333;
+  border-right: 0.5em solid #333;
+  padding-left: 0.5em;
+  background-color: #f4f6f8;
+}
+.section-alta .input-group--error label,
+.section-alta .input-group--error input:not(input[type=checkbox]) {
+  color: #990000;
+}
+.section-alta .input-group--error label:focus,
+.section-alta .input-group--error input:not(input[type=checkbox]):focus {
+  border-color: #990000;
+}
+.section-alta .input-group--error input:not(input[type=checkbox])::-moz-selection {
+  background-color: #cccccc;
+}
+.section-alta .input-group--error input:not(input[type=checkbox])::selection {
+  background-color: #cccccc;
+}
+.section-alta .input-group--error .error-detail {
+  background-color: #ffcccc;
+  color: #990000;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  border-bottom-left-radius: 0.2em;
+  border-bottom-right-radius: 0.2em;
+}
+.section-alta .input-group--error .error-detail:empty {
+  padding: 0;
+}
+.section-alta button {
+  padding: 0.5em;
+  margin-top: 1em;
+}
+@media (min-width: 426px) {
+  .section-alta {
+    width: 90%;
+    margin: 1em auto;
+  }
+}
+@media (min-width: 768px) {
+  .section-alta {
+    padding: 2em;
+    width: 90%;
+    margin: 2em auto;
+  }
+}
+.section-alta table, .section-alta th, .section-alta td {
+  border: 1px solid #62BBC1;
+  border-collapse: collapse;
+}
+.section-alta table {
+  width: 100%;
+}
+.section-alta th, .section-alta td {
+  padding: 5px;
+}
+.section-alta .listado-productos {
+  color: #62BBC1;
+  overflow-x: auto;
+  width: 100%;
+}
+.section-alta h2 {
+  color: #62BBC1;
 }
 
 .section-contact {
@@ -514,4 +583,48 @@ main {
   margin-bottom: 30px;
   font-size: 40px;
   text-decoration: underline;
+}
+
+.section-carrito {
+  padding: 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow-y: auto;
+  display: none;
+  position: fixed;
+  background-color: #4A4C48;
+  color: #62BBC1;
+  z-index: 1;
+  top: 150px;
+  left: 150px;
+  right: 150px;
+  bottom: 150px;
+  box-shadow: 0.3em 0.3em 10em 0.3em black;
+}
+.section-carrito--visible {
+  display: block;
+}
+.section-carrito table, .section-carrito th, .section-carrito td {
+  border: 1px solid #62BBC1;
+  color: #fff;
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: center;
+}
+.section-carrito table {
+  width: 90%;
+  margin: 0 auto;
+}
+.section-carrito th, .section-carrito td {
+  padding: 5px;
+}
+.section-carrito button.btn__enviarCarrito {
+  float: right;
+  margin: 15px;
+  width: 100px;
+  height: 35px;
+  font-size: 1.1em;
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */

@@ -1,15 +1,99 @@
-.section-form {
-    background-color: #010400;
+.section-alta {
     padding: 1em;
-    overflow-x: hidden; 
+    background-color: #30332E;
+    border-radius: 20px;
 
-    &__header {
+    h1 {
         color: #62BBC1;
-        margin: 5px;
     }
-}
 
-.form-container {
-    display: flex;
-    justify-content: center;
+    .input-group {
+        margin: .5em 0 1.5em;
+        input:not(input[type="checkbox"]) {
+            padding: 0.5em 1em;
+            display: block;
+            width: 100%;
+            margin-top: 0.5em;
+            border: none;
+            border-bottom: 1px solid #333;
+            outline: none;
+            border-top-left-radius: .2em;
+            border-top-right-radius: .2em;
+            
+            &:focus {
+                border-left: .5em solid #333;
+                border-right: .5em solid #333;
+                padding-left: 0.5em;
+                background-color: #f4f6f8;
+            }
+        }
+        
+        &--error {
+            label,
+            input:not(input[type="checkbox"]) {
+                color: hsl(0, 100%, 30%);
+                &:focus {
+                    border-color: hsl(0, 100%, 30%);
+                }
+            }
+
+            input:not(input[type="checkbox"])::selection {
+                background-color: hsl(0, 0%, 80%);
+            }
+
+            .error-detail {
+                background-color: hsl(0, 100%, 90%);
+                color: hsl(0, 100%, 30%);
+                font-weight: bold;
+                padding: .25em .5em;
+                border-bottom-left-radius: .2em;
+                border-bottom-right-radius: .2em;
+            }
+
+            .error-detail:empty {
+                padding: 0;
+            }
+        }
+
+
+    }
+
+    button {
+        padding: 0.5em;
+        margin-top: 1em;
+    }
+    
+    @media (min-width: 426px) {
+        width: 90%;
+        margin: 1em auto;
+    }
+    @media (min-width: 768px) {
+        padding: 2em;
+        width: 90%;
+        margin: 2em auto;
+        // background-color: yellow;
+    }
+
+    table, th, td {
+        border: 1px solid #62BBC1;
+        border-collapse: collapse;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th, td {    
+        padding: 5px;
+    }
+
+    .listado-productos{
+        color: #62BBC1;
+        overflow-x: auto;
+        width: 100%;
+    }
+
+    h2 {
+        color: #62BBC1;
+    }
 }

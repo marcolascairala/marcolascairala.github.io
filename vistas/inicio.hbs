@@ -1,0 +1,39 @@
+{{#if productos.length}}
+{{#each productos}}
+    <div class="card">
+        <article class="card__article">
+            <div class="card__image-container">
+                <img class="card__image" src="{{foto}}" alt="foto de {{nombre}}">
+                <div class="card__image-description-normal">
+                    <p>{{nombre}}</p>
+                </div>
+                <div class="card__image-description-overlay">
+                    <h2>{{nombre}}</h2>
+                    <p>
+                        {{descripcion}}                    
+                    </p>
+                    <div class="card__youtube">
+                        <a href="{{referencia}}" target="blank">
+                            <img src="img/icons/icon-yt.png" alt="icono youtube">
+                        </a>
+                    </div>
+                    <div class="card__price" onclick="agregarAlCarrito({{id}})">
+                        <span class="card__price-flex">
+                            <p>{{precio}}</p>
+                            <img src="img/icons/icon-carro.png" alt="icono carro">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="card__content">
+                <h2 class="card__heading">{{nombre}}</h2>
+                <div class="card__description">
+                    <p>{{descripcionCorta}}</p>
+                </div>
+            </div>
+        </article>
+    </div>
+{{/each}}
+{{else}}
+    <h2>No se encontraron productos</h2>
+{{/if}}
